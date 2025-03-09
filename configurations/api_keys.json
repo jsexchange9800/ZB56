@@ -1,0 +1,6 @@
+{
+  "google_api_key": "your-google-api-key-here",
+  "twitter_api_key": "your-twitter-api-key-here",
+  "nasa_api_key": "your-nasa-api-key-here",
+  "openweathermap_api_key": "your-openweathermap-api-key-here"
+}

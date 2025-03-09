@@ -1,0 +1,25 @@
+{
+  "encryption": {
+    "enabled": true,
+    "algorithm": "AES-256",
+    "key": "your-encryption-key-here"
+  },
+  "token_validation": {
+    "enabled": true,
+    "expiration_time": 3600,
+    "issuer": "ZB56"
+  },
+  "access_control": {
+    "roles": [
+      {
+        "role": "admin",
+        "permissions": ["read", "write", "delete"]
+      },
+      {
+        "role": "user",
+        "permissions": ["read"]
+      }
+    ],
+    "default_role": "user"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راهنمای توسعه‌دهندگان - ZB56</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            direction: rtl;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>راهنمای توسعه‌دهندگان - ZB56</h1>
+    <p>این راهنما برای توسعه‌دهندگان است تا نحوه توسعه و افزودن ویژگی‌های جدید به پروژه ZB56 را یاد بگیرند.</p>
+
+    <h2>راه‌اندازی محیط توسعه</h2>
+    <p>برای شروع توسعه، ابتدا محیط توسعه را با استفاده از Docker راه‌اندازی کنید.</p>
+    <pre>docker-compose up --build</pre>
+    <p>این دستور، محیط Docker را ساخته و آن را راه‌اندازی می‌کند.</p>
+
+    <h2>افزودن ماژول جدید</h2>
+    <p>برای افزودن ماژول جدید به پروژه، مراحل زیر را دنبال کنید:</p>
+    <ol>
+        <li>یک پوشه جدید در <code>ZB56-Plugins</code> ایجاد کنید.</li>
+        <li>کدهای مربوط به ماژول را در این پوشه قرار دهید.</li>
+        <li>ماژول جدید را به فایل <code>__init__.py</code> وارد کنید تا در سیستم شناسایی شود.</li>
+    </ol>
+
+</body>
+</html>

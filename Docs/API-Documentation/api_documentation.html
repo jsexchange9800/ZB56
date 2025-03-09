@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - ZB56</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            direction: rtl;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .endpoint {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>مستندات API - ZB56</h1>
+    <p>این مستندات به شما کمک می‌کند که نحوه استفاده از API‌های موجود در ZB56 را یاد بگیرید.</p>
+
+    <div class="endpoint">
+        <h2>API 1: ثبت‌نام کاربر</h2>
+        <p><strong>URL:</strong> <code>/api/register</code></p>
+        <p><strong>متد:</strong> POST</p>
+        <h3>پارامترها:</h3>
+        <ul>
+            <li><strong>username</strong>: نام کاربری (رشته)</li>
+            <li><strong>email</strong>: ایمیل (رشته)</li>
+            <li><strong>password</strong>: رمز عبور (رشته)</li>
+        </ul>
+        <h3>پاسخ موفق:</h3>
+        <pre>{
+            "status": "success",
+            "message": "کاربر با موفقیت ثبت شد"
+        }</pre>
+        <h3>پاسخ خطا:</h3>
+        <pre>{
+            "status": "error",
+            "message": "اطلاعات وارد شده اشتباه است"
+        }</pre>
+    </div>
+
+    <div class="endpoint">
+        <h2>API 2: ورود به سیستم</h2>
+        <p><strong>URL:</strong> <code>/api/login</code></p>
+        <p><strong>متد:</strong> POST</p>
+        <h3>پارامترها:</h3>
+        <ul>
+            <li><strong>username</strong>: نام کاربری (رشته)</li>
+            <li><strong>password</strong>: رمز عبور (رشته)</li>
+        </ul>
+        <h3>پاسخ موفق:</h3>
+        <pre>{
+            "status": "success",
+            "message": "ورود موفقیت‌آمیز"
+        }</pre>
+        <h3>پاسخ خطا:</h3>
+        <pre>{
+            "status": "error",
+            "message": "نام کاربری یا رمز عبور اشتباه است"
+        }</pre>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "password_policy": {
+    "min_length": 12,
+    "require_uppercase": true,
+    "require_number": true,
+    "require_special_char": true
+  },
+  "api_key_policy": {
+    "max_usage": 2000,
+    "expiry_days": 60
+  }
+}

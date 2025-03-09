@@ -1,0 +1,6 @@
+{
+    "memory_threshold": 80,
+    "cpu_threshold": 75,
+    "enable_gpu": true,
+    "enable_multithreading": true
+}

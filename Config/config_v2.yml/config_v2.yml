@@ -1,0 +1,33 @@
+# General project configuration
+project_name: "ZB56"
+version: "2.0.0"
+database:
+  host: "localhost"
+  port: 5432
+  username: "user"
+  password: "password"
+  db_name: "zb56_database"
+  dialect: "postgresql"
+
+# Server settings
+server:
+  host: "0.0.0.0"
+  port: 8000
+  debug: true
+
+# Logging configuration
+logging:
+  level: "DEBUG"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  file: "logs/project_log.log"
+
+# API configuration
+api:
+  base_url: "https://api.zb56.com"
+  api_key: "your_api_key_here"
+  timeout: 30  # seconds
+
+# Security configuration
+security:
+  encryption_key: "your_encryption_key_here"
+  token_expiry: 3600  # 1 hour
